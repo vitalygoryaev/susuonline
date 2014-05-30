@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <!-- NEWS CONTENT -->
+<LinearLayout
+	 xmlns:android="http://schemas.android.com/apk/res/android"
+	 android:orientation="vertical"
+	 android:layout_width="fill_parent"
+	 android:layout_height="fill_parent">
+	
+    <RelativeLayout
+		 android:orientation="horizontal"
+		 android:layout_width="fill_parent"
+		 android:layout_height="wrap_content"
+		 android:padding="0dp" >
+    
+    <Spinner
+	    android:id="@+id/faculty_spinner"
+	    android:layout_width="150dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true" 
+	    android:translationY="12dp"/>
+    
+    <Spinner
+	    android:id="@+id/group_spinner"
+	    android:layout_width="70dp"
+	    android:layout_height="wrap_content"
+	    android:visibility="gone"
+	    android:layout_toRightOf="@id/faculty_spinner"
+	    android:translationY="12dp" />
+    
+    <Button
+        android:id="@+id/schedule_button"
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/schedule_button_text"
+	    android:layout_alignParentRight="true"
+	    android:layout_margin="0dp"
+	    android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+    
+    <LinearLayout
+	 	android:layout_height="wrap_content" 
+        android:layout_width="match_parent" 
+        android:background="#d3d3d3"
+        android:orientation="horizontal" >
+    
+        <TextView 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            android:textSize="20sp" 
+            android:text="@string/schedule_header_text"
+            android:padding="7dip" 
+            android:background="#d3d3d3"
+            android:textColor="#000"
+            android:gravity="left"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:id="@+id/schedule_header" />
+        
+        <Switch
+            android:id="@+id/week_switch"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:gravity="right"
+            android:layout_gravity="right|center_vertical"
+            android:textOn="@string/week1"
+            android:textOff="@string/week2" 
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+<!--     
+    <RadioGroup 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <RadioButton 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mon"
+        />
+    <RadioButton 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tue"
+        />
+    <RadioButton 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wed"
+        />
+    <RadioButton 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thu"
+        />
+    <RadioButton 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fri"
+        />
+    <RadioButton 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sat"
+        />
+</RadioGroup>
+--> 
+    <ScrollView
+	    android:layout_width="match_parent"
+	 	android:layout_height="wrap_content" >
+    
+    <TableLayout 
+	    android:layout_width="match_parent" 
+	    android:layout_height="wrap_content" 
+	    android:shrinkColumns="1"  
+	    android:stretchColumns="1" 
+	    android:background="#ffffff" > 
+	    
+    <!-- MONDAY -->
+    <TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="left"
+        android:id="@+id/monday_header" 
+        android:visibility="gone"
+        android:background="#b0b0b0" >
+        <TextView 
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="18sp" android:text="@string/monday_upper"  android:layout_span="2"
+            android:padding="10dip" android:background="#b0b0b0"
+            android:textColor="#000"/>  
+    </TableRow>  
+     
+    <TableRow 
+        android:id="@+id/monday1" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#dcdcdc" > 
+    </TableRow>
+    <TableRow 
+        android:id="@+id/monday2" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#d3d3d3" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/monday3" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent" 
+        android:background="#dcdcdc" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/monday4" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#d3d3d3" >  
+    </TableRow>
+    <TableRow 
+        android:id="@+id/monday5" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#dcdcdc" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/monday6" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#d3d3d3" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/monday7" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#dcdcdc" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/monday8" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#d3d3d3" >  
+    </TableRow>   
+    
+    <!-- TUESDAY -->
+    <TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="left"
+        android:id="@+id/tuesday_header"
+        android:visibility="gone"
+        android:background="#b0b0b0" > 
+        <TextView 
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="18sp" android:text="@string/tuesday_upper"  android:layout_span="2"
+            android:padding="10dip" android:background="#b0b0b0"
+            android:textColor="#000"/>  
+    </TableRow>  
+     
+    <TableRow 
+        android:id="@+id/tuesday1" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#dcdcdc" >  
+    </TableRow>
+    <TableRow 
+        android:id="@+id/tuesday2" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#d3d3d3" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/tuesday3" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent" 
+        android:background="#dcdcdc" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/tuesday4" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#d3d3d3" >  
+    </TableRow>
+    <TableRow 
+        android:id="@+id/tuesday5" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#dcdcdc" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/tuesday6" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#d3d3d3" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/tuesday7" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#dcdcdc" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/tuesday8" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#d3d3d3" >  
+    </TableRow>   
+    
+    <!-- WEDNESDAY -->
+    <TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="left"
+        android:id="@+id/wednesday_header"
+        android:visibility="gone"
+        android:background="#b0b0b0" >
+        <TextView 
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="18sp" android:text="@string/wednesday_upper"  android:layout_span="2"
+            android:padding="10dip" android:background="#b0b0b0"
+            android:textColor="#000"/>  
+    </TableRow>  
+     
+    <TableRow 
+        android:id="@+id/wednesday1" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#dcdcdc" >  
+    </TableRow>
+    <TableRow 
+        android:id="@+id/wednesday2" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#d3d3d3" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/wednesday3" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent" 
+        android:background="#dcdcdc" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/wednesday4" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#d3d3d3" >  
+    </TableRow>
+    <TableRow 
+        android:id="@+id/wednesday5" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#dcdcdc" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/wednesday6" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#d3d3d3" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/wednesday7" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#dcdcdc" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/wednesday8" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#d3d3d3" >  
+    </TableRow>   
+    
+    <!-- THURSDAY -->
+    <TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="left"
+        android:id="@+id/thursday_header"
+        android:visibility="gone"
+        android:background="#b0b0b0" >
+        <TextView 
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="18sp" android:text="@string/thursday_upper"  android:layout_span="2"
+            android:padding="10dip" android:background="#b0b0b0"
+            android:textColor="#000"/>  
+    </TableRow>  
+     
+    <TableRow 
+        android:id="@+id/thursday1" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#dcdcdc" >  
+    </TableRow>
+    <TableRow 
+        android:id="@+id/thursday2" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#d3d3d3" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/thursday3" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent" 
+        android:background="#dcdcdc" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/thursday4" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#d3d3d3" >  
+    </TableRow>
+    <TableRow 
+        android:id="@+id/thursday5" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#dcdcdc" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/thursday6" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#d3d3d3" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/thursday7" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#dcdcdc" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/thursday8" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#d3d3d3" >  
+    </TableRow>   
+    
+    <!-- FRIDAY -->
+    <TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="left"
+        android:id="@+id/friday_header"
+        android:visibility="gone"
+        android:background="#b0b0b0" >
+        <TextView 
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="18sp" android:text="@string/friday_upper"  android:layout_span="2"
+            android:padding="10dip" android:background="#b0b0b0"
+            android:textColor="#000"/>  
+    </TableRow>  
+     
+    <TableRow 
+        android:id="@+id/friday1" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#dcdcdc" >  
+    </TableRow>
+    <TableRow 
+        android:id="@+id/friday2" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#d3d3d3" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/friday3" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent" 
+        android:background="#dcdcdc" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/friday4" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#d3d3d3" >  
+    </TableRow>
+    <TableRow 
+        android:id="@+id/friday5" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#dcdcdc" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/friday6" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#d3d3d3" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/friday7" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#dcdcdc" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/friday8" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#d3d3d3" >  
+    </TableRow>   
+    
+    <!-- SATURDAY -->
+    <TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="left"
+        android:id="@+id/saturday_header"
+        android:visibility="gone"
+        android:background="#b0b0b0" >
+        <TextView 
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="18sp" android:text="@string/saturday_upper"  android:layout_span="2"
+            android:padding="10dip" android:background="#b0b0b0"
+            android:textColor="#000" />  
+    </TableRow>  
+     
+    <TableRow 
+        android:id="@+id/saturday1" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#dcdcdc" >  
+    </TableRow>
+    <TableRow 
+        android:id="@+id/saturday2" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#d3d3d3" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/saturday3" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent" 
+        android:background="#dcdcdc" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/saturday4" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#d3d3d3" >  
+    </TableRow>
+    <TableRow 
+        android:id="@+id/saturday5" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#dcdcdc" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/saturday6" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#d3d3d3" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/saturday7" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#dcdcdc" >  
+    </TableRow> 
+    <TableRow 
+        android:id="@+id/saturday8" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:background="#d3d3d3" >  
+    </TableRow>
+    
+    <TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent"
+        android:visibility="invisible" 
+        android:background="#d3d3d3" >  
+        <TextView 
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content"
+            android:visibility="gone" />  
+    </TableRow>  
+</TableLayout>
+</ScrollView>
+</LinearLayout>
+<!-- NAVIGATION -->
+    <ListView android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="#BBB"
+        android:dividerHeight="2dp"
+        android:background="#BBB"/>
+    
+    
+</android.support.v4.widget.DrawerLayout>

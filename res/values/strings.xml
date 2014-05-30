@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ЮУрГУ Онлайн</string>
+    <string name="news_menu_item">Новости</string>
+    <string name="schedule_menu_item">Schedule</string>
+    <string name="hello_world">FEATURING MIKE 23</string>
+    <string name="edit_message">Fukk me! slowly</string>
+    <string name="send_button">Send me far awayyy</string>
+    <string name="title_activity_schedule">Расписание</string>
+    <string name="empty_object_string">load more shit</string>
+    <string name="logtag">shit</string>
+    <string name="schedule_button_text">Загрузить</string>
+    <string-array name="allowed_faculties">
+        <item>Автотракторный</item>
+		<item>Архитектурно-строительный</item>
+		<item>Архитектурный</item>
+		<item>Аэрокосмический</item>
+		<item>Вычислительная математика и информатика</item>
+		<item>Журналистика</item>
+		<item>Институт спорта, туризма и сервиса</item>
+		<item>Институт экономики, торговли и технологий</item>
+		<item>Исторический</item>
+		<item>Математика, механика и компьютерные науки</item>
+		<item>Международный</item>
+		<item>Механико-технологический</item>
+		<item>Приборостроительный (КТУР)</item>
+		<item>Психология</item>
+		<item>Физико-металлургический</item>
+		<item>Физический</item>
+		<item>Химический</item>
+		<item>Экономика и предпринимательство</item>
+		<item>Экономика и управление</item>
+		<item>Энергитический</item>
+		<item>Юридический</item>
+    </string-array>
+    <string-array name="weekdays">
+        <item>monday</item>
+        <item>tuesday</item>
+        <item>wednesday</item>
+        <item>thursday</item>
+        <item>friday</item>
+        <item>saturday</item>
+    </string-array>
+    <string name="offline">Нет соединения с интернетом</string>
+    <string name="drawer_open">Закрыть меню</string>
+    <string name="drawer_close">Открыть меню</string>
+    <string-array name="navigation_names">
+        <item>Новости</item>
+        <item>Расписание</item>
+    </string-array>
+    <string name="navigation_title">Меню</string>
+    <string name="news_limit_reached">"Достигнут лимит новостей"</string>
+    <string name="vk_group_id">"-26863530"</string>
+    <string name="no_news">"Новостей нет"</string>
+    <string name="select_faculty">"Факультет"</string>
+    <string name="need_internet">"Требуется подключение к интернету для первого запуска"</string>
+    <string name="univeris_term_part_link">"https://univeris.susu.ac.ru/services/mobile/GetCurrentTerm/groupId/"</string>
+    <string name="no_classes">"Нет пар"</string>
+    <string name="univeris_schedule_link">"https://univeris.susu.ac.ru/services/mobile/GetStudySchedule/groupId/"</string>
+    <string name="univeris_groups_link">"https://univeris.susu.ac.ru/services/mobile/GetGroups/facultyId/"</string>
+    <string name="univeris_faculties_link">"https://univeris.susu.ac.ru/services/mobile/GetFaculties"</string>
+    <string name="schedule_header_text">"РАСПИСАНИЕ "</string>
+    <string name="load_more">"ЗАГРУЗИТЬ ЕЩЕ"</string>
+    <string name="monday_upper">"ПОНЕДЕЛЬНИК"</string>
+    <string name="tuesday_upper">"ВТОРНИК"</string>
+    <string name="wednesday_upper">"СРЕДА"</string>
+    <string name="thursday_upper">"ЧЕТВЕРГ"</string>
+    <string name="friday_upper">"ПЯТНИЦА"</string>
+    <string name="saturday_upper">"СУББОТА"</string>
+    <string name="monday">"Понедельник"</string>
+    <string name="tuesday">"Вторник"</string>
+    <string name="wednesday">"Среда"</string>
+    <string name="thursday">"Четверг"</string>
+    <string name="friday">"Пятница"</string>
+    <string name="saturday">"Суббота"</string>
+    <string name="week1">"1 Нед"</string>
+    <string name="week2">"2 Нед"</string>
+
+</resources>
